@@ -1,0 +1,94 @@
+  
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title>Drop-down navigation menu example</title>
+        <meta name="description" content="">
+        
+        <!-- menu.js stylesheet -->
+        <link rel="stylesheet" href="menu.css">
+        
+        <!-- demo styles -->
+        <link rel="stylesheet" href="examples.css">
+
+        <style>
+          
+
+            #renderCanvas {
+                width: 100%;
+                height: 100%;
+                touch-action: none;
+            }
+        </style>
+        
+    </head>
+    <body class="demo">
+        
+        <header id="header">
+            
+            <!-- menu -->
+            <nav id="menu" class="menu-horizontal menu-dropdown menu-expandable">
+                <ul>
+                    <li>
+                      <a href="#">Home</a>
+                      <ul class="ui-menu-sub">
+                        <li><a href="/index.html">Strona Główna</a></li>
+                        <li><a href="/description.html">Opis Projektu</a></li>
+                       
+                    </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="#">Picures</a>
+                        <ul class="ui-menu-sub">
+                            <li><a href="/page_1.html">Obiekt_1 - Elephant</a></li>
+                            <li><a href="/page_2.html">Obiekt_2 - Barrel </a></li>
+                            <li><a href="/page_3.html">Obiekt_3 - Apple</a></li>
+                            <li><a href="/page_4.html">Obiekt_4 - Horse</a></li>
+                            <li><a href="/page_5.html">Obiekt_5 - Plant</a></li>
+                            <li><a href="/page_6.html">Animation</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/contact.html">Contact</a>
+                        <ul class="ui-menu-sub">
+                            <li><a href = "mailto: adambar835@student.polsl.pl">Bartoszyński Adam</a></li>
+                            <li><a href = "mailto: domidob156@student.polsl.pl">Dobija Dominik</a></li>
+                            </ul>
+                      </li>
+                </ul>
+            </nav>
+            <!-- /menu -->
+            
+        </header>
+
+        <!-- dependencies -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="menu.js"></script>
+        
+        <!-- run the script -->
+        <script>
+            
+            // create menu
+            $('#menu').menu({
+                expand: {
+                    enabled: true,
+                    button: false,
+                    single: true,
+                    blur: true
+                }
+            });
+            
+        </script>
+        
+
+
+<body>
+
+ 
+  
+</body>
+
+</html>
